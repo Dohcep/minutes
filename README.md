@@ -3,6 +3,6 @@
 **_ATTENTION_**
 
 Ce programme peut **détruire** votre ordinateur
-A ne pas mettre dans toutes les mains
+A ne pas mettre entre toutes les mains
 
 ~~FIN~~
