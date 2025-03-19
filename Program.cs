@@ -11,10 +11,15 @@ class Program
 
     static void Main()
     {
-        var (h1, m1) = ConvertirMinutes(90);
-        Console.WriteLine($"90 minutes = {h1} heure.s et {m1} minute.s");
-
-        var (h2, m2) = ConvertirMinutes(150);
-        Console.WriteLine($"150 minutes = {h2} heure.s et {m2} minute.s");
+        Console.Write("Entrez un nombre de minutes : ");
+        if (int.TryParse(Console.ReadLine(), out int nbMin))
+        {
+            var (heures, minutes) = ConvertirMinutes(nbMin);
+            Console.WriteLine($"{nbMin} minutes = {heures} heure(s) et {minutes} minute(s)");
+        }
+        else
+        {
+            Console.WriteLine("Veuillez entrer un nombre valide.");
+        }
     }
-}
+}    
